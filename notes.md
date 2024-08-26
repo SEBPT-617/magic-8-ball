@@ -1,24 +1,25 @@
-1 - mkdir magic-8-ball
-2 - cd magic-8-ball
-3 - touch server.js
-4 - npm init -y
-5 - npm install express
-6 - set up server.js
-a. require express
-b. create an instance of express
-c. create a route for the root URL
-d. listen on port 3000
-7 - nodemon or node server.js
-8 - open browser and go to localhost:3000
-9 - create a new route for /:num param
+## Express App - Magic 8 Ball - Setup
+  1. mkdir magic-8-ball
+  2. cd magic-8-ball
+  3. touch server.js
+  4. npm init -y
+  5. npm install express
+  6. set up server.js
+     - require express
+     - create an instance of express
+     - create a route for the root URL
+     - listen on port 3000
+  7. nodemon or node server.js
+  8. open browser and go to localhost:3000
+  9. create a new route for /:num param
+  10. add error handeling and data validation
 
-10 - update root and :num routes to return JSON and clickable links
-11 - add error handeling and data validation
-
-- After setting up step 6, introduce middleware for morgan
+### Introducing [Morgan Middleware](https://www.npmjs.com/package/morgan)
 - npm install morgan
 - require morgan
 - app.use(morgan('dev'))
+
+<hr>
 
 --- What is middleware? ---
 
@@ -35,11 +36,13 @@ d. listen on port 3000
 - Its primary purpose is to log HTTP requests in a standardized format, making it easier to monitor and debug your application.
 - Morgan can be configured to log various details about each request, such as the request method, URL, response status code, and response time.
 
+<hr>
+
 REVIREW QUESTIONS:
 
-- how do I initialize a new Node.js project?
-- how do I install a new package in a Node.js project?
-- how do I require a package in a Node.js project?
+- how do I initialize a new `Node.js` project?
+- how do I install a new package in a `Node.js` project?
+- how do I require a package in a `Node.js` project?
 - what does the `app.use` method do in Express?
 - what does `app.listen` do in Express?
 - what do I mean when I say "define a route" in Express? What methods have we used to define routes, so far?
